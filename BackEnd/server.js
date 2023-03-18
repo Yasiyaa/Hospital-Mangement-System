@@ -31,3 +31,5 @@ app.listen(PORT, () => {
 });
 
 
+const doctorRouter = require("./routes/Doctor.js");
+app.use("/doctor",doctorRouter);  
