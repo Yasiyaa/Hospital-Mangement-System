@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.schema;
+const schema = mongoose.Schema;
 
 const PatientSchema = new schema({
   name: {
@@ -14,6 +14,6 @@ const PatientSchema = new schema({
   }
 });
 
-const Patient = mongoose.model("Patient", docterSchema);
+const Patient = mongoose.model("Patient", PatientSchema);
 
 module.exports = Patient;

@@ -32,4 +32,8 @@ app.listen(PORT, () => {
 
 
 const doctorRouter = require("./routes/Doctor.js");
+const Patient = require("./module/Patients.js");
 app.use("/doctor",doctorRouter);  
+
+const patientRouter = require("./routes/Patient.js");
+app.use("/patient",patientRouter);

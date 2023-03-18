@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 
-const schema = mongoose.schema;
+const schema = mongoose.Schema;
 
-const docterSchema = new schema({
+const doctorSchema = new schema({
   name: {
     type: "String",
   },
@@ -17,6 +17,6 @@ const docterSchema = new schema({
   },
 });
 
-const Doctor = mongoose.model("Doctor", docterSchema);
+const Doctor = mongoose.model("Doctor", doctorSchema);
 
 module.exports = Doctor;
